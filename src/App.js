@@ -1,27 +1,23 @@
-import { Route, Routes } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
-import { LoaderBallTriangle, SharedLayout } from 'components';
-
-const HomePage = lazy(() => import('./pages/HomePage/HomePage'))
-const ShopPage = lazy(() => import('./pages/ShopPage/ShopPage'))
-const CartPage = lazy(() => import('./pages/CartPage/CartPage'))
-const HistoryPage = lazy(() => import('./pages/HistoryPage/HistoryPage'))
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'))
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <Suspense fallback={<LoaderBallTriangle />}>
-          <Routes>
-            <Route path="/" element={<SharedLayout />}>
-              <Route index element={<HomePage />} />
-              <Route path="shop" element={<ShopPage />} />
-              <Route path="cart" element={<CartPage />} />
-              <Route path="history" element={<HistoryPage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Route>
-          </Routes>
-      </Suspense>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
