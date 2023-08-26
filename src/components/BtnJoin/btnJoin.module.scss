@@ -8,7 +8,6 @@
         background: url('../../assets/img/hero/left-mob-frame.svg');
         width: 42px;
         height: 53px;
-        color: rgb(255, 0, 76);
         position: absolute;
         top: 0;
         left: 0;
@@ -19,10 +18,32 @@
         background: url('../../assets/img/hero/right-mob-frame.svg');
         width: 42px;
         height: 53px;
-        color: rgb(255, 0, 76);
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    @media (min-width: 1280px) {
+        &:before {
+            content: "";
+            background: url('../../assets/img/hero/left-pc-frame.svg');
+            width: 44px;
+            height: 71px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:after {
+        content: "";
+        background: url('../../assets/img/hero/right-pc-frame.svg');
+        width: 44px;
+        height: 71px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
     }
 
 }

@@ -1,4 +1,10 @@
-import heroBg from "assets/img/hero/Backgroundbg1.png"
+// hero:
+import heroBg from "assets/img/hero/bg_hero.png"
+
+// gallery:
+import slide1 from "./assets/img/gallery/slide-1.jpg"
+import slide2 from "./assets/img/gallery/slide-2.jpg"
+import slide3 from "./assets/img/gallery/slide-3.png"
 
 export const hero = {
     titlePart1: '7',
@@ -19,3 +25,7 @@ export const nav = [
     { name: 'services', href: '/' },
 
 ]
+
+export const gallery = {
+    slide1, slide2, slide3
+}

@@ -43,14 +43,15 @@ module.exports = {
       },
       maxWidth: {
         phone: '480px',
-        tab: '768px'
+        tab: '768px',
+        pc: '1280px',
       }
     },
   },
   plugins: [
     // plugin(function ({ addComponents, theme }) {
     //   addComponents({
-    //     '.card': {
+    //     '.section': {
     //       backgroundColor: theme('colors.white'),
     //       borderRadius: theme('borderRadius.lg'),
     //       padding: theme('spacing.6'),
