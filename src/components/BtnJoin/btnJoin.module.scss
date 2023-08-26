@@ -1,0 +1,28 @@
+.button {
+    /* @apply w-full p-5 uppercase font-medium bg-primary bg-opacity-[5%]
+    hover:bg-opacity-20 transition-all  
+    md:absolute md:right-0 md:bottom-0 md:w-[230px] md:p-[14px]  */
+
+    &:before {
+        content: "";
+        background: url('../../assets/img/hero/left-mob-frame.svg');
+        width: 42px;
+        height: 53px;
+        color: rgb(255, 0, 76);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:after {
+        content: "";
+        background: url('../../assets/img/hero/right-mob-frame.svg');
+        width: 42px;
+        height: 53px;
+        color: rgb(255, 0, 76);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+}
