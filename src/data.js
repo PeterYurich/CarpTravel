@@ -27,5 +27,7 @@ export const nav = [
 ]
 
 export const gallery = {
+    title1: "OUR",
+    title2: "GALLERY",
     slide1, slide2, slide3
 }

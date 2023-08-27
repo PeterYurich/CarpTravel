@@ -31,3 +31,12 @@ code {
   background-repeat: no-repeat;
   background-size: 40px 10px;
 }
+
+.isActive {
+  align-self: center;
+  width: 250px;
+}
+
+.gapCont {
+  gap: 22px;
+}
