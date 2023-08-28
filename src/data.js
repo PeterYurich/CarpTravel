@@ -6,6 +6,12 @@ import slide1 from "./assets/img/gallery/slide-1.jpg"
 import slide2 from "./assets/img/gallery/slide-2.jpg"
 import slide3 from "./assets/img/gallery/slide-3.png"
 
+// services
+import pic1 from "./assets/img/services/atvs.jpg"
+import pic2 from "./assets/img/services/rock.jpg"
+import bg1 from "./assets/img/services/Background-back1.jpg"
+import bg2 from "./assets/img/services/Background-back2.jpg"
+
 export const hero = {
     titlePart1: '7',
     titlePart2: 'days',
@@ -29,5 +35,43 @@ export const nav = [
 export const gallery = {
     title1: "OUR",
     title2: "GALLERY",
-    slide1, slide2, slide3
+    pictures: [
+        { id: '01', picture: slide1 },
+        { id: '02', picture: slide2 },
+        { id: '03', picture: slide3 },
+    ]
+}
+
+export const services = {
+    title1: "WE",
+    title2: "OFFER",
+    activities: [
+        {id: "01", name:"ATVs Traveling"},
+        {id: "02", name: "Rock climbing"},
+        {id: "03", name: "Hot air ballooning"},
+        {id: "04", name: "Skydiving"},
+        {id: "05", name: "Rafting"}
+    ],
+    offers: [
+        {
+            id: "01",
+            activity: "ATVs Traveling",
+            day: "01",
+            month: "05",
+            message: "Feel the adrenaline rush",
+            description: "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
+            picture: pic1,
+            bgPic: bg1,
+        },
+        {
+            id: "02",
+            activity: "Rock climbing",
+            day: "02",
+            month: "05",
+            message: "Destroy your limitations",
+            description: "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.",
+            picture: pic2,
+            bgPic: bg2,
+        }
+    ]
 }

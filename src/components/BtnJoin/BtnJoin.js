@@ -7,7 +7,7 @@ export default function BtnJoin({ btnText }) {
             <button
                 className={` w-full p-[15px] uppercase font-medium bg-primary bg-opacity-[5%]
                     hover:bg-opacity-20 transition-all relative
-                    md:w-[230px] md:p-[14px] md:absolute right-0 bottom-0 md:text-18
+                    md:w-[230px] md:p-[14px] md:absolute right-0 bottom-0 md:text-[18px]
                     lg:w-[294px] lg:text-[32px] lg:p-[16px] lg:py-[12px]
                     ${styles.button} `}
             >
