@@ -2,7 +2,7 @@ import React from 'react'
 import { services } from 'data'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { TitleSection } from 'components'
-import { EffectFade, Navigation } from 'swiper/modules'
+import { EffectFade } from 'swiper/modules'
 import 'swiper/css/effect-fade';
 import 'swiper/css';
 
@@ -23,12 +23,7 @@ export default function Services() {
           loop={true}
           slidesPerView={'auto'}
           centeredSlides={true}
-          navigation={{
-            prevEl: '.swiper-prev',
-            nextEl: '.swiper-next',
-            clickable: true
-          }}
-          modules={[Navigation, EffectFade]}
+          modules={[EffectFade]}
           effect='fade'
         >
           {offers.map(offer => (
