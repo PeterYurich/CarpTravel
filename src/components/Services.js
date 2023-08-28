@@ -10,6 +10,7 @@ import 'swiper/css';
 export default function Services() {
 
   const { title1, title2, activities, offers } = services
+  console.log('activities: ', activities);
 
   return (
     <section>
