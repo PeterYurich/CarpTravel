@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function TitleSection({thinPart, boldPart}) {
     return (
@@ -11,4 +12,9 @@ export default function TitleSection({thinPart, boldPart}) {
             <span className='font-medium'>{boldPart}</span>
         </h2>
     )
+}
+
+TitleSection.propTypes = {
+    thinPart: PropTypes.string,
+    boldPart: PropTypes.string
 }

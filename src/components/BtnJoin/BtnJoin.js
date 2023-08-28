@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "components/BtnJoin/btnJoin.module.scss"
+import PropTypes from 'prop-types'
 
 export default function BtnJoin({ btnText }) {
     return (
@@ -18,4 +19,8 @@ export default function BtnJoin({ btnText }) {
             </button>
         </a>
     )
+}
+
+BtnJoin.propTypes ={
+    btnText: PropTypes.string.isRequired
 }
